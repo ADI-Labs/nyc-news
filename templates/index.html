@@ -1,7 +1,104 @@
 <!DOCTYPE html>
-<head>
-	<title>Hello World!</title>
-</head>
-<body>
-	<h1>Hello World!</h1>
-</body>
+<html lang="en">
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Home</title>
+		 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel='stylesheet' type='text/css'>
+		 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+		<script src="static/js/searchBox.js"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAalDN2dXO26te2Soy9gAsOU_wvSlYghVg&libraries=places&callback=initAutocomplete" async defer></script>
+
+	</head>
+	<body>
+	 
+		<div class="row">
+			<div class="large-12 large-centered columns">
+				<div class="panel">
+
+					<h1>Banner</h1>
+
+				</div>
+			</div>
+		</div>
+				
+		<div class="row">
+			<div class="large-12 large-centered columns">
+				<div class="panel">
+
+					<h3>Search</h3>
+
+					<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+					<div id="map"></div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="large-3 columns">
+				<div class="panel">
+
+					<h3>Events</h3>
+
+					<ul class="center">
+						<li>Event 1</li>
+						<li>Event 2</li>
+						<li>Event 3</li>
+						<li>Event 4</li>
+						<li>Event 5</li>
+						<li>Event 6</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="large-6 columns">
+				
+				<div class="panel">
+
+					<h3>Article</h3>
+
+					<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+
+				</div>
+				
+				<div class="panel">
+
+					<h3>Article</h3>
+
+					<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+
+				</div>
+
+			</div>
+
+			<div class="large-3 columns">
+				<div class="panel">
+
+					<h3>Community Leaders</h3>
+
+					<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+
+				</div>
+			</div>
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+		<script>
+		      $(document).foundation();
+		</script>
+
+	</body>
+</html>
