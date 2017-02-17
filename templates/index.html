@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 	<head>
 		
 		<meta charset="utf-8">
@@ -14,171 +13,86 @@
 		 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
+		<script src="static/js/searchBox.js"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAalDN2dXO26te2Soy9gAsOU_wvSlYghVg&libraries=places&callback=initAutocomplete" async defer></script>
+
 	</head>
 	<body>
 	 
 		<div class="row">
-			<div class="large-12 columns">
+			<div class="large-12 large-centered columns">
 				<div class="panel">
 
-					<h1>Feed Template</h1>
+					<h1>Banner</h1>
 
 				</div>
 			</div>
 		</div>
-				 
+				
 		<div class="row">
-			
-			<div class="large-3 columns ">
+			<div class="large-12 large-centered columns">
 				<div class="panel">
-					
-					<a href="#"><img src="https://placehold.it/300x240&text=[img]"/></a>
-					<h5><a href="#">Your Name</a></h5>	
-					
-					<div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
-						
-						<section class="section">
-							<h5 class="title"><a href="#">Section 1</a></h5>
-						</section>
-						<section class="section">
-							<h5 class="title"><a href="#">Section 2</a></h5>
-						</section>
-						<section class="section">
-							<h5 class="title"><a href="#">Section 3</a></h5>
-						</section>
-						<section class="section">
-							<h5 class="title"><a href="#">Section 4</a></h5>
-						</section>
-						<section class="section">
-							<h5 class="title"><a href="#">Section 5</a></h5>
-						</section>
-						<section class="section">
-							<h5 class="title"><a href="#">Section 6</a></h5>
-						</section>
 
-					</div>
+					<h3>Search</h3>
+
+					<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+					<div id="map"></div>
+
 				</div>
 			</div>
-		 
+		</div>
+
+		<div class="row">
+
+			<div class="large-3 columns">
+				<div class="panel">
+
+					<h3>Events</h3>
+
+					<ul class="center">
+						<li>Event 1</li>
+						<li>Event 2</li>
+						<li>Event 3</li>
+						<li>Event 4</li>
+						<li>Event 5</li>
+						<li>Event 6</li>
+					</ul>
+
+				</div>
+			</div>
+
 			<div class="large-6 columns">
-				<div class="row">
-					
-					<div class="large-2 columns small-3"><img src="https://placehold.it/80x80&text=[img]"/></div>
-						<div class="large-10 columns">
-							
-							<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-							
-							<ul class="inline-list">
-								<li><a href="">Reply</a></li>
-								<li><a href="">Share</a></li>
-							</ul>
-							
-							<h6>2 Comments</h6>
-							
-							<div class="row">
+				
+				<div class="panel">
 
-								<div class="large-2 columns small-3"><img src="https://placehold.it/50x50&text=[img]"/></div>
-								<div class="large-10 columns">
+					<h3>Article</h3>
 
-									<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p>
-								
-								</div>
-							
-							</div>
+					<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-							<div class="row">
+				</div>
+				
+				<div class="panel">
 
-								<div class="large-2 columns small-3"><img src="https://placehold.it/50x50&text=[img]"/></div>
-								<div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
-							
-							</div>
+					<h3>Article</h3>
 
-						</div>
-					</div>
-				 
-					<hr/>
-				 
-					<div class="row">
-						
-						<div class="large-2 columns small-3"><img src="https://placehold.it/80x80&text=[img]"/></div>
-							<div class="large-10 columns">
-
-								<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-
-								<ul class="inline-list">
-									<li><a href="">Reply</a></li>
-									<li><a href="">Share</a></li>
-								</ul>
-
-							</div>
-						</div>
-			 
-						<hr/>
-			 
-						<div class="row">
-
-							<div class="large-2 columns small-3"><img src="https://placehold.it/80x80&text=[img]"/></div>
-
-								<div class="large-10 columns">
-									
-									<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-									
-									<ul class="inline-list">
-										<li><a href="">Reply</a></li>
-										<li><a href="">Share</a></li>
-									</ul>
-									
-									<h6>2 Comments</h6>
-									
-									<div class="row">
-										<div class="large-2 columns small-3"><img src="https://placehold.it/50x50&text=[img]"/></div>
-											<div class="large-10 columns">
-
-												<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
-
-											</div>
-										</div>
-									</div>
-
-								</div>
-						 
-								<aside class="large-3 columns hide-for-small">
-									<p><img src="https://placehold.it/300x440&text=[ad]"/></p>
-									<p><img src="https://placehold.it/300x440&text=[ad]"/></p>
-								</aside>
-
-							</div>
-		 
-		<footer class="row">
-			<div class="large-12 columns">
-
-				<hr/>
-
-				<div class="row">
-					
-					<div class="large-5 columns">
-
-						<p>&copy; Copyright no one at all. Go to town.</p>
-
-					</div>
-
-					<div class="large-7 columns">
-						
-						<ul class="inline-list right">
-							<li><a href="#">Section 1</a></li>
-							<li><a href="#">Section 2</a></li>
-							<li><a href="#">Section 3</a></li>
-							<li><a href="#">Section 4</a></li>
-							<li><a href="#">Section 5</a></li>
-							<li><a href="#">Section 6</a></li>
-						</ul>
-
-					</div>
+					<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
 				</div>
 
 			</div>
-		</footer>
+
+			<div class="large-3 columns">
+				<div class="panel">
+
+					<h3>Community Leaders</h3>
+
+					<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+
+				</div>
+			</div>
+
+		</div>
 
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
