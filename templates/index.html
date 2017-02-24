@@ -77,7 +77,6 @@
 					<h3>Article</h3>
 
 					<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-
 				</div>
 
 			</div>
@@ -86,9 +85,14 @@
 				<div class="panel">
 
 					<h3>Community Leaders</h3>
+					{% for official in reps.officials %}
 
-					<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-
+					<li>
+						<h4>{{official.name}}</h4>
+						<img src= "{{ official.photoUrl }}"style="width:304px;height:228px;">
+						<p>{{ official.phones }}</p>
+						<p>{{ official.emails }}</p>
+					{% endfor %}
 				</div>
 			</div>
 
