@@ -1,5 +1,10 @@
 from bs4 import BeautifulSoup
 import urllib.request, urllib.parse, urllib.error
+'''
+This thing doesnt work because gotham doesnt allow scraping (or even urllib-ing)
+'''
+
+
 
 """ Given a URL, returns a BeautifulSoup object for that page
 """
