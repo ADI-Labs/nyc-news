@@ -1,5 +1,9 @@
+# -*- coding: utf-8 -*-
+
 from flask import Flask, render_template, request
+import requests
 from firebase import firebase
+import itertools
 
 app = Flask(__name__)
 firebase = firebase.FirebaseApplication("https://labs-2c94e.firebaseio.com", None)
@@ -9,7 +13,9 @@ firebase = firebase.FirebaseApplication("https://labs-2c94e.firebaseio.com", Non
 @app.route("/", methods = ["GET", "POST"])
 def homepage():
     if request.method == "GET":
-        return render_template("index.html")
+    	url = "https://www.googleapis.com/civicinfo/v2/representatives?address=10027&key=AIzaSyAalDN2dXO26te2Soy9gAsOU_wvSlYghVg"
+    	res = requests.get(url).json()
+        return render_template("index.html", reps = res)
     else:
         return render_template("index.html")
 
