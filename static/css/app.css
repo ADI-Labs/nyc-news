@@ -1,22 +1,13 @@
-html, body {
-	width: 100%;
-	heigth: 100%;
-}
-
-body {
-	padding-top: 20px;
-    background-color: black;
-    background-image: url(http://i0.wp.com/devleader.ca/wp-content/uploads/2014/01/php_code.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
-.splash-page {
-    margin-top: 10%;
-}
-
-.splash-page .panel {
+h1 {
     text-align: center;
-    background-color: rgba(242, 242, 242, 0.9);
+}
+
+#non-feed {
+    position: fixed;
+    z-index: 1;
+}
+
+#feed {
+    position: absolute;
+    z-index: 0;
 }
