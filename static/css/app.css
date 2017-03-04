@@ -1,13 +1,65 @@
-h1 {
-    text-align: center;
-}
-
-#non-feed {
+.banner {
     position: fixed;
+    margin: auto;
+    width: 100%;
+    top: 0px;
+    height: 20%;
     z-index: 1;
 }
 
-#feed {
+.search-form {
+    margin: auto;
+    width: 50%;
+}
+
+.search-box {
+    margin: auto;
+    width: 50%;
+}
+
+.search-box input {
+    width: 100%;
+}
+
+.left-sidebar {
+    position: fixed;
+    top: 20%;
+    height: 80%;
+    left: 5%;
+    width: 25%;
+    overflow-y: scroll;
+}
+
+.right-sidebar {
+    position: fixed;
+    top: 20%;
+    height: 80%;
+    right: 5%;
+    width: 25%;
+    overflow-y: scroll;
+}
+
+.feed {
     position: absolute;
+    top: 20%;
+    left: 32.5%;
+    right: 32.5%;
+    margin: auto;
     z-index: 0;
+}
+
+.article {
+    height: 20%;
+}
+
+.panel {
+    background-color: rgba(134, 180, 202, 1);
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+img {
+    object-fit: contain;
 }

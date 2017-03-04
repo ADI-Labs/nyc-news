@@ -7,210 +7,168 @@
 		
 		<title>Home</title>
 
-		<!-- Foundation -->
+		<!-- CSS -->
 		<link rel="stylesheet" href="static/css/normalize.css">
-		<link rel="stylesheet" href="static/css/foundation.css">
-
-		<!-- Our CSS -->
 		<link rel="stylesheet" href="static/css/app.css">
 		 
 		<!-- JavaScript -->
-		<script src="static/js/vendor/modernizr.js"></script>
-	</head>
+		<script src="static/js/modernizr.js"></script>
+        
+    </head>
 	<body>
 
-		<!-- Non-Feed -->
-		<section id="non-feed">
+        <!-- Banner -->
+        <div class="panel banner">
+            <h1>Title</h1>
+            
+            <div class="search-form">
+                <form action="/search" method="post">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search for your neighborhood or zip code" name="neighborhood">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+            
+        <!-- Events Sidebar -->
+        <div class="panel left-sidebar content">
 
-			<!-- Title Bar -->
-			<div class="row">
-				<div class="large-12 large-centered columns">
-					<div class="panel">
-						<h1>Title</h1>
-					</div>
-				<div>
-			</div>
+            <h2>Events</h2>
 
-			<!-- Search Box -->
-			<div class="row">
-				<div class="large-12 large-centered columns">
-					<div class="panel">
-						<form action="/search" method="post">
-							<input type="text" placeholder="Search for your neighborhood or zip code" name="neighborhood">
-						</form>
-					</div>
-				</div>
-			</div>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+                <li>Event 4</li>
+                <li>Event 5</li>
+                <li>Event 6</li>
+            </ul>
 
-			<!-- Content -->
-			<div class="row">
+        </div>
 
-				<!-- Events Sidebar -->
-				<div class="large-3 large-left columns">
-					<div class="panel">
+        <!-- Community Leaders Sidebar -->
+        <div class="panel right-sidebar content">
 
-						<h3>Events</h3>
+            <h2>Community Leaders</h2>
 
-						<ul class="center">
-							<li>Event 1</li>
-							<li>Event 2</li>
-							<li>Event 3</li>
-							<li>Event 4</li>
-							<li>Event 5</li>
-							<li>Event 6</li>
-						</ul>
+            <ul>	
+            {% for official in reps.officials %}
+                <li>
+                    <h4>{{official.name}}</h4>
+                    <img src= "{{ official.photoUrl }}" alt="">
+                    <p>{{ official.phones }}</p>
+                    <p>{{ official.emails }}</p>
+                </li>
+            {% endfor %}
+            </ul>
 
-					</div>
-				</div>
+        </div>
 
-				<!-- Community Leaders Sidebar-->
-				<div class="large-3 large-right columns">
-					<div class="panel">
+        <!-- Article Feed -->
+        <div class="feed">
+            
+            <div class="panel article">
 
-						<h3>Community Leaders</h3>
+                <h3>Article</h3>
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-					</div>
-				</div>
+            </div>
 
-			</div>
+            <div class="panel article">
 
-		</section>
+                <h3>Article</h3>
 
-		<!-- Article Feed -->
-		<section id="feed">
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-			<div class="row">
+            </div>
 
-				<div class="large-6 large-centered columns">
-					<div class="panel">
+            <div class="panel article">
 
-						<h3>Article</h3>
+                <h3>Article</h3>
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-					</div>
-				</div>
+            </div>
 
-					
-				<div class="large-6 large-centered columns">
-					<div class="panel">
+            <div class="panel article">
 
-						<h3>Article</h3>
+                <h3>Article</h3>
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-					</div>
-				</div>
+            </div>
 
-				<div class="large-6 large-centered columns">
-					<div class="panel">
 
-						<h3>Article</h3>
+            <div class="panel article">
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+                <h3>Article</h3>
 
-					</div>
-				</div>
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-				<div class="large-6 large-centered columns">
-					<div class="panel">
+            </div>
 
-						<h3>Article</h3>
+            <div class="panel article">
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+                <h3>Article</h3>
 
-					</div>
-				</div>
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-				<div class="large-6 large-centered columns">
-					<div class="panel">
+            </div>
 
-						<h3>Article</h3>
+            <div class="panel article">
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+                <h3>Article</h3>
 
-					</div>
-				</div>
-					
-				<div class="large-6 large-centered columns">
-					<div class="panel">
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-						<h3>Article</h3>
+            </div>
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+            <div class="panel article">
 
-					</div>
-				</div>
+                <h3>Article</h3>
 
-				<div class="large-6 large-centered columns">
-					<div class="panel">
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-						<h3>Article</h3>
+            </div>
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+                    <div class="panel article">
 
-					</div>
-				</div>
-					
-				<div class="large-6 large-centered columns">
-					<div class="panel">
+                <h3>Article</h3>
 
-						<h3>Article</h3>
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+            </div>
 
-					</div>
-				</div>
+            <div class="panel article">
 
-				<div class="large-6 large-centered columns">
-					<div class="panel">
+                <h3>Article</h3>
 
-						<h3>Article</h3>
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+            </div>
 
-					</div>
-				</div>
-					
-				<div class="large-6 large-centered columns">
-					<div class="panel">
+            <div class="panel article">
 
-						<h3>Article</h3>
+                <h3>Article</h3>
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-					</div>
-				</div>
+            </div>
 
-				<div class="large-6 large-centered columns">
-					<div class="panel">
+            <div class="panel article">
 
-						<h3>Article</h3>
+                <h3>Article</h3>
 
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+                <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
 
-					</div>
-				</div>
+            </div>
 
-				<div class="large-6 large-centered columns">
-					<div class="panel">
-
-						<h3>Article</h3>
-
-						<p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-
-					</div>
-				</div>
-
-			</div>
-
-		</section>
-
+        </div>
+        
 		<!-- JavaScript -->
-		<script src="static/js/vendor/jquery.js"></script>
-  		<script src="static/js/foundation.min.js"></script>
+		<script src="static/js/jquery.js"></script>
 		<script>
 		      $(document).foundation();
 		</script>
