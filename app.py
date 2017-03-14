@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template, request
-import requests
+import requests, json
 from firebase import firebase
 import itertools
 
@@ -15,13 +15,21 @@ def homepage():
     if request.method == "GET":
     	url = "https://www.googleapis.com/civicinfo/v2/representatives?address=10027&key=AIzaSyAalDN2dXO26te2Soy9gAsOU_wvSlYghVg"
     	res = requests.get(url).json()
-    	return render_template("index.html", reps = res)
+    	articles = results("default")
+    	return render_template("index.html", articles = articles, reps = res)
     else:
-        return render_template("index.html")
+    	url = "https://www.googleapis.com/civicinfo/v2/representatives?address=10027&key=AIzaSyAalDN2dXO26te2Soy9gAsOU_wvSlYghVg"
+    	res = requests.get(url).json()
+    	articles = results(request.form["neighborhood"])
+    	return render_template("index.html", articles = articles, reps = res)
 
 @app.errorhandler(404)
 def page_not_found(error):
 	return "Sorry, this page was not found.", 404
 
+def results(location):
+	return data["articles"][location]
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+	data = json.load(open("data.json"))
+	app.run(host="0.0.0.0")
