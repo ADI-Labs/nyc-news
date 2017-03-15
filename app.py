@@ -20,7 +20,7 @@ def homepage():
     else:
     	url = "https://www.googleapis.com/civicinfo/v2/representatives?address=10027&key=AIzaSyAalDN2dXO26te2Soy9gAsOU_wvSlYghVg"
     	res = requests.get(url).json()
-    	articles = results(request.form["neighborhood"])
+    	articles = results(request.form["location"])
     	return render_template("index.html", articles = articles, reps = res)
 
 @app.errorhandler(404)

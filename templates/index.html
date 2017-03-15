@@ -19,13 +19,20 @@
 
         <!-- Banner -->
         <div class="panel banner">
+            
             <h1>Title</h1>
             
-            <div class="search-form">
-                <form action="/search" method="post">
-                    <div class="search-box">
-                        <input type="text" placeholder="Search for your neighborhood or zip code" name="neighborhood">
-                    </div>
+            <!-- Dropdown Neighborhood Menu -->
+            <div class="dropdown">
+                <form action="/index.html" method="post" id="theform">
+                    <select name="location">
+                        <option value="default" selected>Please select a neighborhood</option>
+                        <option value="Bronx">Bronx</option>
+                        <option value="Brooklyn">Brooklyn</option>
+                        <option value="Manhattan">Manhattan</option>
+                        <option value="Queens">Queens</option>
+                        <option value="Staten Island">Staten Island</option>
+                    </select>
                 </form>
             </div>
             
@@ -33,7 +40,7 @@
             
         <!-- Events Sidebar -->
         <div class="panel left-sidebar content">
-
+            
             <h2>Events</h2>
 
             <ul>
@@ -56,7 +63,7 @@
             {% for official in reps.officials %}
                 <li>
                     <h4>{{official.name}}</h4>
-                    <img src= "{{ official.photoUrl }}" alt="">
+                    <img src="{{ official.photoUrl }}" alt="">
                     <p>{{ official.phones }}</p>
                     <p>{{ official.emails }}</p>
                 </li>
@@ -84,9 +91,6 @@
         
 		<!-- JavaScript -->
 		<script src="static/js/jquery.js"></script>
-		<script>
-		      $(document).foundation();
-		</script>
-
+        <script src="static/js/select.js"></script>
 	</body>
 </html>

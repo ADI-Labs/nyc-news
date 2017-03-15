@@ -7,17 +7,17 @@
     z-index: 1;
 }
 
-.search-form {
+.dropdown {
     margin: auto;
     width: 50%;
 }
 
-.search-box {
+form {
     margin: auto;
     width: 50%;
 }
 
-.search-box input {
+form select {
     width: 100%;
 }
 
