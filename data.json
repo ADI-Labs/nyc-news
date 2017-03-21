@@ -1,0 +1,314 @@
+{
+	"articles": {
+		"default": [{
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Default Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}],
+		"Bronx": [{
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Bronx Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}],
+		"Brooklyn": [{
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Brooklyn Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}],
+		"Manhattan": [{
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Manhattan Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}],
+		"Queens": [{
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Queens Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}],
+		"Staten Island": [{
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}, {
+			"title": "Staten Island Article Title",
+			"description": "Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.",
+			"link": "www.google.com"
+		}]
+	},
+	"events": {
+		"default": [],
+		"Bronx": [],
+		"Brooklyn": [],
+		"Manhattan": [],
+		"Queens": [],
+		"Staten Island": []
+	},
+	"representatives": {
+		"default": [],
+		"Bronx": [],
+		"Brooklyn": [],
+		"Manhattan": [],
+		"Queens": [],
+		"Staten Island": []
+	}
+}
