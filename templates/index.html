@@ -60,12 +60,20 @@
             <h2>Community Leaders</h2>
 
             <ul>	
-            {% for official in reps.officials %}
+            {% for office in res.offices[2:] %}
                 <li>
-                    <h4>{{official.name}}</h4>
-                    <img src="{{ official.photoUrl }}" alt="">
-                    <p>{{ official.phones }}</p>
-                    <p>{{ official.emails }}</p>
+                    {% set official = res.officials[office.officialIndices[0]] %}
+                    <h4>{{official.name}},
+                     {{office.name}}</h4>
+                    {% if res.officials[office.officialIndices[0]].photoUrl %}
+                        <img src="{{ res.officials[office.officialIndices[0]].photoUrl }}" height="100" alt="">
+                    {% endif %}
+                    {% if official.phones %}
+                        <p>{{ official.phones}} </p>
+                    {% endif %}
+                    {% if official.emails %}
+                        <p>{{ official.emails }}</p>
+                    {% endif %}
                 </li>
             {% endfor %}
             </ul>
