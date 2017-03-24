@@ -1,10 +1,15 @@
+body {
+    background-color: rgb(33, 33, 33);
+}
+
 .banner {
     position: fixed;
-    margin: auto;
+    /*margin: auto;*/
     width: 100%;
     top: 0px;
     height: 20%;
     z-index: 1;
+    background-color: rgb(46, 112, 97);
 }
 
 .dropdown {
@@ -25,8 +30,9 @@ form select {
     position: fixed;
     top: 20%;
     height: 80%;
-    left: 5%;
-    width: 25%;
+    left: 8.33%;
+    width: 16.66%;
+    margin: auto;
     overflow-y: scroll;
 }
 
@@ -34,8 +40,9 @@ form select {
     position: fixed;
     top: 20%;
     height: 80%;
-    right: 5%;
-    width: 25%;
+    right: 8.33%;
+    width: 16.66%;
+    margin: auto;
     overflow-y: scroll;
 }
 
@@ -53,7 +60,8 @@ form select {
 }
 
 .panel {
-    background-color: rgba(134, 180, 202, 1);
+    background-color: rgb(146, 146, 146);
+    margin: auto;
 }
 
 h1, h2, h3 {
