@@ -1,10 +1,9 @@
 body {
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(146, 146, 146);
 }
 
 .banner {
     position: fixed;
-    /*margin: auto;*/
     width: 100%;
     top: 0px;
     height: 20%;
@@ -14,34 +13,43 @@ body {
 
 .dropdown {
     margin: auto;
-    width: 50%;
+    width: 33.66%;
 }
 
 form {
-    margin: auto;
-    width: 50%;
+    width: 100%;
 }
 
 form select {
     width: 100%;
 }
 
+.main-area {
+    position: fixed;
+    top: 20%;
+    height: 80%;
+    left: 5%;
+    right: 5%;
+    margin: auto;
+    background-color: rgb(33, 33, 33);
+}
+
 .left-sidebar {
     position: fixed;
     top: 20%;
     height: 80%;
-    left: 8.33%;
-    width: 16.66%;
+    left: 12.59%;
+    width: 16.3%;
     margin: auto;
-    overflow-y: scroll;
+    overflow-y: scroll; 
 }
 
 .right-sidebar {
     position: fixed;
     top: 20%;
     height: 80%;
-    right: 8.33%;
-    width: 16.66%;
+    right: 12.59%;
+    width: 16.3%;
     margin: auto;
     overflow-y: scroll;
 }
@@ -49,8 +57,8 @@ form select {
 .feed {
     position: absolute;
     top: 20%;
-    left: 32.5%;
-    right: 32.5%;
+    left: 34.26%;
+    right: 34.26%;
     margin: auto;
     z-index: 0;
 }
@@ -60,7 +68,7 @@ form select {
 }
 
 .panel {
-    background-color: rgb(146, 146, 146);
+    background-color: rgb(233, 235, 238);
     margin: auto;
 }
 
