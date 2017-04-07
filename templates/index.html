@@ -9,7 +9,7 @@
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="static/css/normalize.css">
-		<link rel="stylesheet" href="static/css/app.css">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/app.css') }}">
 		 
 		<!-- JavaScript -->
 		<script src="static/js/modernizr.js"></script>
@@ -98,6 +98,7 @@
 
         <!-- Article Feed -->
         <div class="feed">
+            <h2>News</h2>
             
             {% for article in articles %}
                 <div class="panel article">
