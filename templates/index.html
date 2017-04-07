@@ -47,10 +47,24 @@
 
             <ul>
             {% for event in eventsres.events %}
-            <li>{{ event.name.html | safe }}</li>
-                {{ event.description.html | safe }}
-                
+
+                <div class="panel article">
+
+                    <h3><a href="{{ event.url }}">{{ event.name.html | safe }}</a></h3>
+                    {{ event.start.local }}
+                    <br>
+                    {% if event.description.text|length >= 100 %}
+                    {{ event.description.text[:100] }}...
+                    {% endif %}
+
+                    {% if event.description.text|length < 100 %}
+                    {{ event.description.text }}
+                    {% endif %}
+
+
+                </div>
             {% endfor %}
+
             </ul>
 
         </div>
@@ -61,8 +75,9 @@
             <h2>Community Leaders</h2>
 
             <ul>	
-            {% for office in civres.offices[2:] %}
-                <li>
+            {% for office in civres.offices[7:] %}
+
+                <div class="panel article">
                     {% set official = civres.officials[office.officialIndices[0]] %}
                     <h4>{{official.name}},
                      {{office.name}}</h4>
@@ -70,12 +85,12 @@
                         <img src="{{ civres.officials[office.officialIndices[0]].photoUrl }}" height="100" alt="">
                     {% endif %}
                     {% if official.phones %}
-                        <p>{{ official.phones}} </p>
+                        <p>{{ official.phones[0]}} </p>
                     {% endif %}
                     {% if official.emails %}
-                        <p>{{ official.emails }}</p>
+                    <p><a href="mailto:{{ official.emails[0] }}" target="_top">{{ official.emails[0] | safe}}</a></p>
                     {% endif %}
-                </li>
+                </div>
             {% endfor %}
             </ul>
 
