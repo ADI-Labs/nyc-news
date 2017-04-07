@@ -46,12 +46,11 @@
             <h2>Events</h2>
 
             <ul>
-                <li>Event 1</li>
-                <li>Event 2</li>
-                <li>Event 3</li>
-                <li>Event 4</li>
-                <li>Event 5</li>
-                <li>Event 6</li>
+            {% for event in eventsres.events %}
+            <li>{{ event.name.html | safe }}</li>
+                {{ event.description.html | safe }}
+                
+            {% endfor %}
             </ul>
 
         </div>
@@ -62,13 +61,13 @@
             <h2>Community Leaders</h2>
 
             <ul>	
-            {% for office in res.offices[2:] %}
+            {% for office in civres.offices[2:] %}
                 <li>
-                    {% set official = res.officials[office.officialIndices[0]] %}
+                    {% set official = civres.officials[office.officialIndices[0]] %}
                     <h4>{{official.name}},
                      {{office.name}}</h4>
-                    {% if res.officials[office.officialIndices[0]].photoUrl %}
-                        <img src="{{ res.officials[office.officialIndices[0]].photoUrl }}" height="100" alt="">
+                    {% if civres.officials[office.officialIndices[0]].photoUrl %}
+                        <img src="{{ civres.officials[office.officialIndices[0]].photoUrl }}" height="100" alt="">
                     {% endif %}
                     {% if official.phones %}
                         <p>{{ official.phones}} </p>
