@@ -14,13 +14,17 @@ firebase = firebase.FirebaseApplication("https://labs-2c94e.firebaseio.com", Non
 @app.route("/", methods = ["GET", "POST"])
 def homepage():
     if request.method == "GET":
-        url = "https://www.googleapis.com/civicinfo/v2/representatives?address=" + "New York City" + "&key=AIzaSyAalDN2dXO26te2Soy9gAsOU_wvSlYghVg"
-        res = json.loads(requests.get(url).text)
+        civic_url = "https://www.googleapis.com/civicinfo/v2/representatives?address=" + "New York City" + "&key=AIzaSyAalDN2dXO26te2Soy9gAsOU_wvSlYghVg"
+        events_url = "https://www.eventbriteapi.com/v3/events/search/?location.address=New York City&categories=112&subcategories=12007&token=DPDJZECOID5UA7SDBK25"
+        civres = json.loads(requests.get(civic_url).text)
+        eventsres = json.loads(requests.get(events_url).text)
         articles = results("default")
-        return render_template("index.html", articles = articles, res = res)
+        return render_template("index.html", articles = articles, civres = civres, eventsres = eventsres)
     else:
-        url = "https://www.googleapis.com/civicinfo/v2/representatives?address=" + request.form["location"] + "&key=AIzaSyAalDN2dXO26te2Soy9gAsOU_wvSlYghVg"
-        res = json.loads(requests.get(url).text, encoding='utf-8')
+        civic_url = "https://www.googleapis.com/civicinfo/v2/representatives?address=" + request.form["location"] + "&key=AIzaSyAalDN2dXO26te2Soy9gAsOU_wvSlYghVg"
+        events_url = "https://www.eventbriteapi.com/v3/events/search/?location.address=" + request.form["location"] + "&categories=112&subcategories=12007&token=DPDJZECOID5UA7SDBK25"
+        civres = json.loads(requests.get(civic_url).text)
+        eventsres = json.loads(requests.get(events_url).text)
         articles = results(request.form["location"])
         return render_template("index.html", articles = articles, res = res)
 
