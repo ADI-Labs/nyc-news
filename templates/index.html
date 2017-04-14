@@ -9,9 +9,9 @@
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="static/css/normalize.css">
-		<link rel="stylesheet" href="static/css/app.css">
-        
-		<!-- Modernizer -->
+        <link rel="stylesheet" href="static/css/app.css">
+		 
+		<!-- JavaScript -->
 		<script src="static/js/modernizr.js"></script>
 		
         <!-- adding Firebase aApp -->
@@ -92,12 +92,25 @@
             <h2>Events</h2>
 
             <ul>
-                <li>Event 1</li>
-                <li>Event 2</li>
-                <li>Event 3</li>
-                <li>Event 4</li>
-                <li>Event 5</li>
-                <li>Event 6</li>
+            {% for event in eventsres.events %}
+
+                <div class="panel article">
+
+                    <h3><a href="{{ event.url }}">{{ event.name.html | safe }}</a></h3>
+                    {{ event.start.local }}
+                    <br>
+                    {% if event.description.text|length >= 100 %}
+                    {{ event.description.text[:100] }}...
+                    {% endif %}
+
+                    {% if event.description.text|length < 100 %} 
+                    {{ event.description.text }}
+                    {% endif %}
+
+
+                </div>
+            {% endfor %}
+
             </ul>
 
         </div>
@@ -108,21 +121,22 @@
             <h2>Community Leaders</h2>
 
             <ul>	
-            {% for office in res.offices[2:] %}
-                <li>
-                    {% set official = res.officials[office.officialIndices[0]] %}
+            {% for office in civres.offices[7:] %}
+
+                <div class="panel article">
+                    {% set official = civres.officials[office.officialIndices[0]] %}
                     <h4>{{official.name}},
                      {{office.name}}</h4>
-                    {% if res.officials[office.officialIndices[0]].photoUrl %}
-                        <img src="{{ res.officials[office.officialIndices[0]].photoUrl }}" height="100" alt="">
+                    {% if civres.officials[office.officialIndices[0]].photoUrl %}
+                        <img src="{{ civres.officials[office.officialIndices[0]].photoUrl }}" height="100" alt="">
                     {% endif %}
                     {% if official.phones %}
-                        <p>{{ official.phones}} </p>
+                        <p>{{ official.phones[0]}} </p>
                     {% endif %}
                     {% if official.emails %}
-                        <p>{{ official.emails }}</p>
+                    <p><a href="mailto:{{ official.emails[0] }}" target="_top">{{ official.emails[0] | safe}}</a></p>
                     {% endif %}
-                </li>
+                </div>
             {% endfor %}
             </ul>
 
@@ -130,6 +144,7 @@
 
         <!-- Article Feed -->
         <div class="feed">
+            <h2>News</h2>
             
             {% for article in articles %}
                 <div class="panel article">
@@ -144,8 +159,10 @@
             {% endfor %}
         
         </div>
-		<!-- JavaScript -->
+		
+        <!-- JavaScript -->
 		<script src="static/js/jquery.js"></script>
         <script src="static/js/app.js"></script>
+            
 	</body>
 </html>
