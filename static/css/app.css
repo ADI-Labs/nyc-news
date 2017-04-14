@@ -5,10 +5,18 @@ body {
 .banner {
     position: fixed;
     width: 100%;
-    top: 0px;
+    top: 0%;
     height: 20%;
     z-index: 1;
     background-color: rgb(46, 112, 97);
+}
+
+.sign-in-button, .sign-out-button {
+    position: fixed;
+    top: 0%;
+    height: 10%;
+    width: 20%;
+    right: 0%;
 }
 
 .dropdown {

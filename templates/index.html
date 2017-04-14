@@ -10,15 +10,61 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="static/css/normalize.css">
 		<link rel="stylesheet" href="static/css/app.css">
-		 
-		<!-- JavaScript -->
-		<script src="static/js/modernizr.js"></script>
         
+		<!-- Modernizer -->
+		<script src="static/js/modernizr.js"></script>
+		
+        <!-- adding Firebase aApp -->
+        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-messaging.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-storage.js"></script>
+        <script>
+          // initialize Firebase
+          var config = {
+            apiKey: "AIzaSyBeIOzvNIlY90DRAj8HhXNLL5aCLhNylB4",
+            authDomain: "labs-2c94e.firebaseapp.com",
+            databaseURL: "https://labs-2c94e.firebaseio.com",
+            projectId: "labs-2c94e",
+            storageBucket: "labs-2c94e.appspot.com",
+            messagingSenderId: "615805281183"
+          };
+          var app = firebase.initializeApp(config);
+        </script>
+        
+        <!-- Firebase authentication -->
+        <script src="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.css">
+        <script type="text/javascript">
+          // FirebaseUI config
+          var uiConfig = {
+            signInFlow: "popup",
+            signInSuccessUrl: "/index.html",
+            signInOptions: [
+              firebase.auth.GoogleAuthProvider.PROVIDER_ID
+            ],
+            // terms of service url
+            tosUrl: "/index.html"
+          };
+          // initialize the FirebaseUI Widget using Firebase
+          var ui = new firebaseui.auth.AuthUI(app.auth());
+          // start method will wait until DOM is loaded
+          ui.start(".sign-in-button", uiConfig);
+        </script>
+    
     </head>
 	<body>
 
         <!-- Banner -->
         <div class="banner">
+            
+            <div class="sign-out-button">
+                <p class="account-info"></p>
+                <button class="logout">Sign Out</button>
+            </div>
+
+            <div class="sign-in-button"></div>
             
             <h1>Title</h1>
             
@@ -100,6 +146,6 @@
         </div>
 		<!-- JavaScript -->
 		<script src="static/js/jquery.js"></script>
-        <script src="static/js/select.js"></script>
+        <script src="static/js/app.js"></script>
 	</body>
 </html>
