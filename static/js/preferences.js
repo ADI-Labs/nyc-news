@@ -1,9 +1,3 @@
-//Submits form on selection of neighborhood from dropdown menu
-document.getElementsByName("location")[0].addEventListener("change", function() {
-    document.getElementById("theform").submit();
-});
-
-
 firebase.auth().onAuthStateChanged(function(user) {
     if(user) {
         document.getElementsByClassName("sign-in-button")[0].style.display = "none";
@@ -19,4 +13,3 @@ firebase.auth().onAuthStateChanged(function(user) {
 document.getElementsByClassName("logout")[0].addEventListener("click", function() {
     firebase.auth().signOut();
 });
-

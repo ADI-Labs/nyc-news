@@ -28,6 +28,11 @@ def homepage():
         articles = results(request.form["location"])
         return render_template("index.html", articles = articles, civres = civres, eventsres = eventsres)
 
+@app.route("/preferences.html", methods = ["GET"])
+@app.route("/preferences", methods= ["GET"])
+def preferences():
+    return render_template("preferences.html")
+
 @app.errorhandler(404)
 def page_not_found(error):
 	return "Sorry, this page was not found.", 404

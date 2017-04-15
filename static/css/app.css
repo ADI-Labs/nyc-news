@@ -11,12 +11,30 @@ body {
     background-color: rgb(132, 183, 216);
 }
 
-.sign-in-button, .sign-out-button {
+.banner .sign-in-button, .banner .sign-out-button {
     position: fixed;
     top: 0%;
     height: 10%;
     width: 20%;
-    right: 0%;
+    right: 5%;
+}
+
+.account-interface .logout {
+    float: left;
+    width: 50%;
+    background-color: rgb(224,224,224);
+}
+
+.account-interface .access-acount {
+    float: right;
+    width: 50%;
+}
+
+.access-account a {
+    display: block;
+    background-color: rgb(224,224,224);
+    color: inherit;
+    text-decoration: none;
 }
 
 .dropdown {
@@ -30,6 +48,42 @@ form {
 
 form select {
     width: 100%;
+}
+
+.preferences {
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    right: 30%;
+    left: 30%;
+    background-color: rgb(132, 183, 216);
+}
+
+.preferences .sign-in-button, .preferences .sign-out-button {
+    position: relative;
+    top: 10%;
+    height: 10%;
+    width: 80%;
+    margin: auto;
+}
+
+.preferences .sign-out-button {
+    background-color: rgb(224,224,224);
+}
+
+.preferences .homepage-button {
+    position: relative;
+    top: 20%;
+    height: 10%;
+    width: 80%;
+    margin: auto;
+}
+
+.homepage-button a {
+    display: block;
+    background-color: rgb(224,224,224);
+    color: inherit;
+    text-decoration: none;
 }
 
 .main-area {
