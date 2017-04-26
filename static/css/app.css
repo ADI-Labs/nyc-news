@@ -5,23 +5,29 @@ body {
 .banner {
     position: fixed;
     width: 100%;
-    top: 0px;
+    top: 0%;
     height: 20%;
     z-index: 1;
     background-color: rgb(132, 183, 216);
 }
 
-.dropdown {
-    margin: auto;
-    width: 33.66%;
+.logged-in, .logged-out{
+    position: fixed;
+    top: 0%;
+    height: 10%;
+    width: 20%;
+    right: 5%;
+    background-color: rgb(224,224,224);
 }
 
-form {
-    width: 100%;
+.logout, .login {
+    float: left;
+    width: 50%;
 }
 
-form select {
-    width: 100%;
+.account-settings, .logup {
+    float: right;
+    width: 50%;
 }
 
 .main-area {
@@ -62,6 +68,44 @@ form select {
     z-index: 0;
 }
 
+.preferences {
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    right: 30%;
+    left: 30%;
+    background-color: rgb(132, 183, 216);
+}
+
+.preferences .account-interface {
+    position: fixed;
+    top: 20%;
+    right: 32%;
+    width: 36%;
+}
+
+.preferences .dropdown {
+    float: left;
+    width: 50%;
+}
+
+.preferences .neighborhood-choice {
+    float: right;
+    width: 50%;
+}
+
+.preferences .homepage-button {
+    position: fixed;
+    top: 40%;
+    right: 40%;
+    width: 20%;
+}
+
+.dropdown {
+    margin: auto;
+    width: 33.66%;
+}
+
 .article {
     height: 20%;
 }
@@ -69,6 +113,18 @@ form select {
 .panel {
     background-color: rgb(224,224,224);
     margin: auto;
+}
+
+form {
+    width: 100%;
+}
+
+form select {
+    width: 100%;
+}
+
+form button {
+    width: 100%;
 }
 
 h1, h2, h3 {

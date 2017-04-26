@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+        <!-- Meta -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <!-- Title -->
+		<title>Home</title>
+
+		<!-- Normalize -->
+		<link rel="stylesheet" href="static/css/normalize.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="static/css/app.css">
+		 
+		<!-- Modernizer -->
+		<script src="static/js/modernizr.js"></script>
+		
+    </head>
+	<body>
+        
+        <!-- Main Area/From -->
+        <div class="preferences">
+            
+            <div class="account-interface">
+            
+                <!-- Dropdown Neighborhood Menu -->
+                <div class="dropdown">
+                    <form action="/set-neighborhood" method="post" class="theform">
+                        <select name="location">
+                            <option value="default" selected>Select a default neighborhood</option>
+                            <option value="Bronx">Bronx</option>
+                            <option value="Brooklyn">Brooklyn</option>
+                            <option value="Manhattan">Manhattan</option>
+                            <option value="Queens">Queens</option>
+                            <option value="Staten Island">Staten Island</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="neighborhood-choice">
+                    <form >
+                        <button>{{default_neighborhood}}</button>
+                    </form>
+                </div>
+            
+            </div>
+
+            <div class="homepage-button">
+                <form action="/index.html", method="get">
+                    <button type="submit">Return to homepage</button>
+                </form>
+            </div>
+                
+        </div>
+        
+        <!-- JavaScript -->
+		<script src="static/js/jquery.js"></script>
+        <script src="static/js/preferences.js"></script>
+        
+    </body>
+</html>

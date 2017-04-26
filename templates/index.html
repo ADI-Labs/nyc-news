@@ -2,31 +2,69 @@
 <html lang="en">
 	<head>
 		
+        <!-- Meta -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
+        <!-- Title -->
 		<title>Home</title>
 
-		<!-- CSS -->
+		<!-- Normalize -->
 		<link rel="stylesheet" href="static/css/normalize.css">
-        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/app.css') }}">
+        <!-- CSS -->
+        <link rel="stylesheet" href="static/css/app.css">
 		 
-		<!-- JavaScript -->
+		<!-- Modernizer -->
 		<script src="static/js/modernizr.js"></script>
-        
+		
     </head>
 	<body>
 
         <!-- Banner -->
         <div class="banner">
             
+            {% if session['user'] %}
+                <div class="logged-in">
+                    <div class="account-interface">
+                        <div class="logout">
+                            <form action="/sign-out", method="post">
+                                <button type="submit">Sign Out</button>
+                            </form>
+                        </div>
+
+                        <div class="account-settings">
+                            <form action="/preferences", method="post">
+                            <button type="submit">Account Settings</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <p class="account-info">You are logged in as {{session['user']['email']}}.</p>
+                </div>
+            {% else %}
+            
+                <div class="logged-out">
+                    <div class="login">
+                        <form action="/sign-in", method="post">
+                            <button type="submit">Sign In</button>
+                        </form>
+                    </div>
+
+                    <div class="logup">
+                        <form action="/sign-up", method="post">
+                            <button type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            {% endif %}
+            
             <h1>Title</h1>
             
             <!-- Dropdown Neighborhood Menu -->
             <div class="dropdown">
-                <form action="/index.html" method="post" id="theform">
+                <form action="/index.html" method="post" class="theform">
                     <select name="location">
-                        <option value="default" selected>Please select a neighborhood</option>
+                        <option value="default" selected>Select a neighborhood to search</option>
                         <option value="Bronx">Bronx</option>
                         <option value="Brooklyn">Brooklyn</option>
                         <option value="Manhattan">Manhattan</option>
@@ -57,7 +95,7 @@
                     {{ event.description.text[:100] }}...
                     {% endif %}
 
-                    {% if event.description.text|length < 100 %}
+                    {% if event.description.text|length < 100 %} 
                     {{ event.description.text }}
                     {% endif %}
 
@@ -82,7 +120,7 @@
                     <h4>{{official.name}},
                      {{office.name}}</h4>
                     {% if civres.officials[office.officialIndices[0]].photoUrl %}
-                        <img src="{{ civres.officials[office.officialIndices[0]].photoUrl }}" height="100" alt="">
+                        <img src="{{civres.officials[office.officialIndices[0]].photoUrl }}" height="100" alt="">
                     {% endif %}
                     {% if official.phones %}
                         <p>{{ official.phones[0]}} </p>
@@ -103,18 +141,20 @@
             {% for article in articles %}
                 <div class="panel article">
 
-                    <h3>{{article["title"]}}</h3>
+                    <h3>{{article['title']}}</h3>
 
-                    <p>{{article["description"]}}</p>
+                    <p>{{article['description']}}</p>
                     
-                    <p>{{article["link"]}}</p>
+                    <p>{{article['link']}}</p>
 
                 </div>
             {% endfor %}
         
         </div>
-		<!-- JavaScript -->
+		
+        <!-- JavaScript -->
 		<script src="static/js/jquery.js"></script>
-        <script src="static/js/select.js"></script>
+        <script src="static/js/index.js"></script>
+            
 	</body>
 </html>
