@@ -11,79 +11,23 @@ body {
     background-color: rgb(132, 183, 216);
 }
 
-.banner .sign-in-button, .banner .sign-out-button {
+.logged-in, .logged-out{
     position: fixed;
     top: 0%;
     height: 10%;
     width: 20%;
     right: 5%;
+    background-color: rgb(224,224,224);
 }
 
-.account-interface .logout {
+.logout, .login {
     float: left;
     width: 50%;
-    background-color: rgb(224,224,224);
 }
 
-.account-interface .access-acount {
+.account-settings, .logup {
     float: right;
     width: 50%;
-}
-
-.access-account a {
-    display: block;
-    background-color: rgb(224,224,224);
-    color: inherit;
-    text-decoration: none;
-}
-
-.dropdown {
-    margin: auto;
-    width: 33.66%;
-}
-
-form {
-    width: 100%;
-}
-
-form select {
-    width: 100%;
-}
-
-.preferences {
-    position: fixed;
-    top: 0%;
-    height: 100%;
-    right: 30%;
-    left: 30%;
-    background-color: rgb(132, 183, 216);
-}
-
-.preferences .sign-in-button, .preferences .sign-out-button {
-    position: relative;
-    top: 10%;
-    height: 10%;
-    width: 80%;
-    margin: auto;
-}
-
-.preferences .sign-out-button {
-    background-color: rgb(224,224,224);
-}
-
-.preferences .homepage-button {
-    position: relative;
-    top: 20%;
-    height: 10%;
-    width: 80%;
-    margin: auto;
-}
-
-.homepage-button a {
-    display: block;
-    background-color: rgb(224,224,224);
-    color: inherit;
-    text-decoration: none;
 }
 
 .main-area {
@@ -124,6 +68,44 @@ form select {
     z-index: 0;
 }
 
+.preferences {
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    right: 30%;
+    left: 30%;
+    background-color: rgb(132, 183, 216);
+}
+
+.preferences .account-interface {
+    position: fixed;
+    top: 20%;
+    right: 32%;
+    width: 36%;
+}
+
+.preferences .dropdown {
+    float: left;
+    width: 50%;
+}
+
+.preferences .neighborhood-choice {
+    float: right;
+    width: 50%;
+}
+
+.preferences .homepage-button {
+    position: fixed;
+    top: 40%;
+    right: 40%;
+    width: 20%;
+}
+
+.dropdown {
+    margin: auto;
+    width: 33.66%;
+}
+
 .article {
     height: 20%;
 }
@@ -131,6 +113,18 @@ form select {
 .panel {
     background-color: rgb(224,224,224);
     margin: auto;
+}
+
+form {
+    width: 100%;
+}
+
+form select {
+    width: 100%;
+}
+
+form button {
+    width: 100%;
 }
 
 h1, h2, h3 {

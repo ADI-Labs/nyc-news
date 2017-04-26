@@ -2,82 +2,69 @@
 <html lang="en">
 	<head>
 		
+        <!-- Meta -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
+        <!-- Title -->
 		<title>Home</title>
 
-		<!-- CSS -->
+		<!-- Normalize -->
 		<link rel="stylesheet" href="static/css/normalize.css">
+        <!-- CSS -->
         <link rel="stylesheet" href="static/css/app.css">
 		 
-		<!-- JavaScript -->
+		<!-- Modernizer -->
 		<script src="static/js/modernizr.js"></script>
 		
-        <!-- adding Firebase aApp -->
-        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-database.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-messaging.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-storage.js"></script>
-        <script>
-          // initialize Firebase
-          var config = {
-            apiKey: "AIzaSyBeIOzvNIlY90DRAj8HhXNLL5aCLhNylB4",
-            authDomain: "labs-2c94e.firebaseapp.com",
-            databaseURL: "https://labs-2c94e.firebaseio.com",
-            projectId: "labs-2c94e",
-            storageBucket: "labs-2c94e.appspot.com",
-            messagingSenderId: "615805281183"
-          };
-          var app = firebase.initializeApp(config);
-        </script>
-        
-        <!-- Firebase authentication -->
-        <script src="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.js"></script>
-        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.css">
-        <script type="text/javascript">
-          // FirebaseUI config
-          var uiConfig = {
-            signInFlow: "popup",
-            signInSuccessUrl: "/index.html",
-            signInOptions: [
-              firebase.auth.GoogleAuthProvider.PROVIDER_ID
-            ],
-            // terms of service url
-            tosUrl: "/index.html"
-          };
-          // initialize the FirebaseUI Widget using Firebase
-          var ui = new firebaseui.auth.AuthUI(app.auth());
-          // start method will wait until DOM is loaded
-          ui.start(".sign-in-button", uiConfig);
-        </script>
-    
     </head>
 	<body>
 
         <!-- Banner -->
         <div class="banner">
             
-            <div class="sign-out-button">
-                <p class="account-info"></p>
-                <div class="account-interface">
-                    <div class="logout">Sign Out</div>
-                    <div class="access-account">
-                        <a href="preferences.html">Account Settings</a>
+            {% if session['user'] %}
+                <div class="logged-in">
+                    <div class="account-interface">
+                        <div class="logout">
+                            <form action="/sign-out", method="post">
+                                <button type="submit">Sign Out</button>
+                            </form>
+                        </div>
+
+                        <div class="account-settings">
+                            <form action="/preferences", method="post">
+                            <button type="submit">Account Settings</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <p class="account-info">You are logged in as {{session['user']['email']}}.</p>
+                </div>
+            {% else %}
+            
+                <div class="logged-out">
+                    <div class="login">
+                        <form action="/sign-in", method="post">
+                            <button type="submit">Sign In</button>
+                        </form>
+                    </div>
+
+                    <div class="logup">
+                        <form action="/sign-up", method="post">
+                            <button type="submit">Sign Up</button>
+                        </form>
                     </div>
                 </div>
-            </div>
-
-            <div class="sign-in-button"></div>
+            {% endif %}
             
             <h1>Title</h1>
             
             <!-- Dropdown Neighborhood Menu -->
             <div class="dropdown">
-                <form action="/index.html" method="post" id="theform">
+                <form action="/index.html" method="post" class="theform">
                     <select name="location">
-                        <option value="default" selected>Please select a neighborhood</option>
+                        <option value="default" selected>Select a neighborhood to search</option>
                         <option value="Bronx">Bronx</option>
                         <option value="Brooklyn">Brooklyn</option>
                         <option value="Manhattan">Manhattan</option>
@@ -133,7 +120,7 @@
                     <h4>{{official.name}},
                      {{office.name}}</h4>
                     {% if civres.officials[office.officialIndices[0]].photoUrl %}
-                        <img src="{{ civres.officials[office.officialIndices[0]].photoUrl }}" height="100" alt="">
+                        <img src="{{civres.officials[office.officialIndices[0]].photoUrl }}" height="100" alt="">
                     {% endif %}
                     {% if official.phones %}
                         <p>{{ official.phones[0]}} </p>
@@ -154,11 +141,11 @@
             {% for article in articles %}
                 <div class="panel article">
 
-                    <h3>{{article["title"]}}</h3>
+                    <h3>{{article['title']}}</h3>
 
-                    <p>{{article["description"]}}</p>
+                    <p>{{article['description']}}</p>
                     
-                    <p>{{article["link"]}}</p>
+                    <p>{{article['link']}}</p>
 
                 </div>
             {% endfor %}
