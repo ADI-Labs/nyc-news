@@ -31,7 +31,7 @@ def homepage():
         events_url = "https://www.eventbriteapi.com/v3/events/search/?location.address=" + "New York City" + "&sort_by=date&categories=112&subcategories=12007&token=DPDJZECOID5UA7SDBK25"
         civres = json.loads(requests.get(civic_url).text)
         eventsres = json.loads(requests.get(events_url).text)
-        articles = results("default")
+        articles = results(db.child("users").child(session['user']['userId']).get(session['user']['idToken']).val()["neighborhood"])
     else:
         civic_url = "https://www.googleapis.com/civicinfo/v2/representatives?address=" + "New York City" + "&key=AIzaSyAalDN2dXO26te2Soy9gAsOU_wvSlYghVg"
         events_url = "https://www.eventbriteapi.com/v3/events/search/?location.address=" + "New York City" + "&sort_by=date&categories=112&subcategories=12007&token=DPDJZECOID5UA7SDBK25"
@@ -59,7 +59,7 @@ def sign_out():
 def preferences_page():
     user = auth.refresh(session['user']['refreshToken'])
     session['user'] = user
-    default_neighborhood = "Placeholder"
+    default_neighborhood = db.child("users").child(session['user']['userId']).get(session['user']['idToken']).val()["neighborhood"]
     return render_template("preferences.html", default_neighborhood = default_neighborhood)
 
 @app.route("/preferences", methods = ["POST"])
