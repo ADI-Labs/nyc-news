@@ -3,6 +3,7 @@ from flask import Flask, render_template, redirect, request, session, jsonify
 import requests, json
 import itertools
 import pyrebase
+from news_apis import fetcher
 
 app = Flask(__name__)
 app.secret_key = "4bc58f6f5e45081f30e0da846ad3560dc347798dbc4373b9"
