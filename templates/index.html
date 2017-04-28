@@ -141,11 +141,9 @@
             {% for article in articles %}
                 <div class="panel article">
 
-                    <h3>{{article['title']}}</h3>
+                    <h3><a href="{{article['link']}}">{{article['title']}}</a></h3>
 
                     <p>{{article['description']}}</p>
-                    
-                    <p>{{article['link']}}</p>
 
                 </div>
             {% endfor %}
