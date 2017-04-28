@@ -3,7 +3,8 @@ from flask import Flask, render_template, redirect, request, session, jsonify
 import requests, json
 import itertools
 import pyrebase
-from news_apis import fetcher
+import gnp
+import io
 
 app = Flask(__name__)
 app.secret_key = "4bc58f6f5e45081f30e0da846ad3560dc347798dbc4373b9"
@@ -20,6 +21,11 @@ config = {
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 db = firebase.database()
+
+try:
+    to_unicode = unicode
+except NameError:
+    to_unicode = str
 
 @app.route("/index.html", methods = ["GET"])
 @app.route("/index", methods = ["GET"])
@@ -112,7 +118,15 @@ def page_not_found(error):
 	return "Sorry, this page was not found.", 404
 
 def results(location):
-	return data['articles'][location]
+    c = gnp.get_google_news_query(location)
+    articles = c['stories']
+    for i in articles:
+        i['title'] = i['title'].decode("utf-8")
+        i['source'] = i['source'].decode("utf-8")
+        i['link'] = i['link'].decode("utf-8")
+        i['description'] = i['content_snippet'].decode("utf-8")
+    return articles
+
 
 if __name__ == "__main__":
 	data = json.load(open("data.json"))

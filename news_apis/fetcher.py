@@ -16,7 +16,7 @@ def getGoogleArticles(q):
         i['title'] = i['title'].decode("utf-8")
         i['source'] = i['source'].decode("utf-8")
         i['link'] = i['link'].decode("utf-8")
-        i['content_snippet'] = i['content_snippet'].decode("utf-8")
+        i['description'] = i['content_snippet'].decode("utf-8")
         i['category'] = i['category']
     
     #articles = {"artcl1": "ssup", "at2": { "hey": "lol", 'l': "you"}}
@@ -24,5 +24,3 @@ def getGoogleArticles(q):
     with open('/Users/salimmjahad/Desktop/tara/data.json', 'w') as fp:
         for i in articles:
             json.dump(i, fp)
-
-getGoogleArticles("New York City")
