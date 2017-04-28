@@ -1,61 +1,28 @@
 import requests
 import json
 import gnp
+import article
+import io
+try:
+    to_unicode = unicode
+except NameError:
+    to_unicode = str
 
-API_KEY = 'de1e47c2942a4547b768b538887273d4'
+def getGoogleArticles(q):
+    c = gnp.get_google_news_query(q)
+    articles = c['stories']
 
-c = gnp.get_google_news_query()
-print(c)
+    for i in articles:
+        i['title'] = i['title'].decode("utf-8")
+        i['source'] = i['source'].decode("utf-8")
+        i['link'] = i['link'].decode("utf-8")
+        i['content_snippet'] = i['content_snippet'].decode("utf-8")
+        i['category'] = i['category']
+    
+    #articles = {"artcl1": "ssup", "at2": { "hey": "lol", 'l': "you"}}
 
+    with open('/Users/salimmjahad/Desktop/tara/data.json', 'w') as fp:
+        for i in articles:
+            json.dump(i, fp)
 
-def url_builder(source):
-    url = 'https://newsapi.org/v1/articles?source='
-    url = url + source + '&apiKey=' + API_KEY
-    return url
-
-
-def get_google():
-    r = requests.get(url_builder('google-news'))
-    source = r.json()
-    return source
-
-def make_article_object(dic_article):
-
-    t = True
-    for c in dic_article:
-        if dic_article[c] == None:
-            t = False
-
-    if  t:
-        title = dic_article['title']
-        author = dic_article['author']
-        publishedAt = dic_article['publishedAt']
-        description = dic_article['description']
-        url = dic_article['url']
-
-        article = Article(title, author, publishedAt, description, url)
-        return article
-
-    return None
-
-def print_articles(source):
-    if source['status'] == 'ok':
-        articles = source['articles']
-        for c in articles:
-            print_article(c)
-
-def print_article(article):
-    t = True
-    for c in article:
-        if article[c] == None:
-            t = False
-    if t:
-        print(article['title'] + '\n' +
-              "By " + article['author'] + '\n' +
-              'Published ' + article['publishedAt'][:10] + '\n\n' +
-              article['description'] + '\n\n' +
-              "URL: " + article['url'] + '\n\n\n\n'
-              )
-
-
-print_articles(get_google())
+getGoogleArticles("New York City")
