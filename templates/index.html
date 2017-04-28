@@ -13,6 +13,8 @@
 		<link rel="stylesheet" href="static/css/normalize.css">
         <!-- CSS -->
         <link rel="stylesheet" href="static/css/app.css">
+
+        <script src="https://use.fontawesome.com/4517b549fc.js"></script>
 		 
 		<!-- Modernizer -->
 		<script src="static/js/modernizr.js"></script>
@@ -81,7 +83,7 @@
         <!-- Events Sidebar -->
         <div class="panel left-sidebar content">
             
-            <h2>Events</h2>
+            <h2>Events <i class ="fa fa-calendar"></i></h2>
 
             <ul>
             {% for event in eventsres.events %}
@@ -110,7 +112,7 @@
         <!-- Community Leaders Sidebar -->
         <div class="panel right-sidebar content">
 
-            <h2>Community Leaders</h2>
+            <h2>Community Leaders <i class="fa fa-user" aria-hidden="true"></i></h2>
 
             <ul>	
             {% for office in civres.offices[7:] %}
@@ -136,7 +138,7 @@
 
         <!-- Article Feed -->
         <div class="feed">
-            <h2>News</h2>
+            <h2>News <i class="fa fa-newspaper-o"></i></h2>
             
             {% for article in articles %}
                 <div class="panel article">
